@@ -6,7 +6,7 @@ interface CardContainerProps {
 
 export function CardContainer({ children }: CardContainerProps) {
   return (
-    <div className="grid grid-cols-3 gap-4 border-y-2 border-lineGrey p-10">
+    <div className="flex flex-col gap-4 p-4 md:grid md:grid-cols-3 md:gap-4 border-y-2 border-lineGrey md:p-10">
       {children}
     </div>
   );
