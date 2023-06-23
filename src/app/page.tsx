@@ -1,6 +1,6 @@
 import { Hero } from "./components/Hero/Hero";
 import { Header } from "./components/UI/Header";
-import { Intro } from "./components/UI/Intro";
+import { Intro } from "./components/Intro";
 
 export default function Home() {
   return (
