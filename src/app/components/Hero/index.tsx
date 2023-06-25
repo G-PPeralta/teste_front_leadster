@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import cardContent from "../../../mocks/cards..json";
-import { Card } from "../UI/Card";
+import { Modal } from "../Modal";
 import { CardContainer } from "../UI/Card/CardContainer";
 
 export function Hero() {
@@ -26,7 +26,7 @@ export function Hero() {
     <section className="flex flex-col items-center justify-center p-4 md:p-20">
       <CardContainer>
         {currentCards.map((card) => (
-          <Card key={card.id} title={card.title} thumbnail={card.thumbnail} />
+          <Modal key={card.id} card={card} />
         ))}
       </CardContainer>
       <div className="flex justify-center mt-4 items-center">
