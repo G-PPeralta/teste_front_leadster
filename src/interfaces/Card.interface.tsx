@@ -4,5 +4,6 @@ export namespace Video {
     title: string;
     thumbnail: string;
     url: string;
+    description: string;
   }
 }

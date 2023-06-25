@@ -16,6 +16,7 @@ module.exports = {
         primaryBlue: '#22BBC51A',
         secondaryBlue: '#005AAD',
         terciaryBlue: '#068DF3',
+        titleBlue: '#2E9AFF',
         primaryGrey: '#D9D9D980',
         lineGrey: '#C8D4DD',
       },
