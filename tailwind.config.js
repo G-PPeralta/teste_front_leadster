@@ -28,6 +28,11 @@ module.exports = {
         presentationIcon: "#BAA43B",
         presentationIconBackground: "#FFF1A0",
         presentationIconText: "#B39F59",
+        filterBorder: "#556C7C",
+        filterText: "#324D5E",
+        filterTextHover: "#40AEFF",
+        filterBorderHover: "#409EFF",
+        filterHoverBackground: "#007EFF"
 
       },
     },

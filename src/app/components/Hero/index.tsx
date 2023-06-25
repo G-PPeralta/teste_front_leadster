@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import cardContent from "../../../mocks/cards..json";
+import { Filter } from "../Filter";
 import { Modal } from "../Modal";
 import { CardContainer } from "../UI/Card/CardContainer";
 
@@ -24,6 +25,7 @@ export function Hero() {
 
   return (
     <section className="flex flex-col items-center justify-center p-4 md:p-20">
+      <Filter />
       <CardContainer>
         {currentCards.map((card) => (
           <Modal key={card.id} card={card} />
