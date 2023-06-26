@@ -7,15 +7,24 @@ import { Modal } from "../Modal";
 import { CardContainer } from "../UI/Card/CardContainer";
 
 export function Hero() {
-  const [filterType, setFilterType] = useState("Geração de Leads");
+  const [filterType, setFilterType] = useState("Chatbot");
   const [currentPage, setCurrentPage] = useState(1);
 
   const filteredCards = cardContent.filter((card) => {
-    const filterWords = filterType.toLowerCase().split(" ");
-
     const titleLowerCase = card.title.toLowerCase();
+    const filterTypeLowerCase = filterType.toLowerCase();
 
-    return filterWords.some((word) => titleLowerCase.includes(word));
+    if (filterTypeLowerCase === "geração de leads") {
+      return (
+        titleLowerCase.includes("geração de leads") ||
+        titleLowerCase.includes("lead") ||
+        titleLowerCase.includes("leads")
+      );
+    }
+
+    return filterTypeLowerCase
+      .split(" ")
+      .some((filter) => titleLowerCase.includes(filter));
   });
 
   const cardsPerPage = 9;
