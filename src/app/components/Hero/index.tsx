@@ -7,13 +7,23 @@ import { Modal } from "../Modal";
 import { CardContainer } from "../UI/Card/CardContainer";
 
 export function Hero() {
+  const [filterType, setFilterType] = useState("Geração de Leads");
   const [currentPage, setCurrentPage] = useState(1);
+
+  const filteredCards = cardContent.filter((card) => {
+    const filterWords = filterType.toLowerCase().split(" ");
+
+    const titleLowerCase = card.title.toLowerCase();
+
+    return filterWords.some((word) => titleLowerCase.includes(word));
+  });
+
   const cardsPerPage = 9;
   const indexOfLastCard = currentPage * cardsPerPage;
   const indexOfFirstCard = indexOfLastCard - cardsPerPage;
-  const currentCards = cardContent.slice(indexOfFirstCard, indexOfLastCard);
+  const currentCards = filteredCards.slice(indexOfFirstCard, indexOfLastCard);
 
-  const totalPages = Math.ceil(cardContent.length / cardsPerPage);
+  const totalPages = Math.ceil(filteredCards.length / cardsPerPage);
   const pageNumbers = Array.from(
     { length: totalPages },
     (_, index) => index + 1
@@ -23,9 +33,13 @@ export function Hero() {
     setCurrentPage(page);
   };
 
+  function handleFilterClick(value: string) {
+    setFilterType(value);
+  }
+
   return (
     <section className="flex flex-col items-center justify-center p-4 md:p-20">
-      <Filter />
+      <Filter onHandleFilter={handleFilterClick} filterType={filterType} />
       <CardContainer>
         {currentCards.map((card) => (
           <Modal key={card.id} card={card} />
