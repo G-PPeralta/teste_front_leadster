@@ -32,8 +32,9 @@ module.exports = {
         filterText: "#324D5E",
         filterTextHover: "#40AEFF",
         filterBorderHover: "#409EFF",
-        filterHoverBackground: "#007EFF"
-
+        filterHoverBackground: "#007EFF",
+        hoverCardBlue: "#99D3FD",
+        hoverCardTextBlue: "#0081FF"
       },
     },
   },

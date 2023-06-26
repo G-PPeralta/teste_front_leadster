@@ -3,7 +3,7 @@
 import { useState } from "react";
 import cardContent from "../../../mocks/cards..json";
 import { Filter } from "../Filter";
-import { Modal } from "../Modal";
+import { CardModal } from "../CardModal";
 import { CardContainer } from "../UI/Card/CardContainer";
 
 export function Hero() {
@@ -51,7 +51,7 @@ export function Hero() {
       <Filter onHandleFilter={handleFilterClick} filterType={filterType} />
       <CardContainer>
         {currentCards.map((card) => (
-          <Modal key={card.id} card={card} />
+          <CardModal key={card.id} card={card} />
         ))}
       </CardContainer>
       <div className="flex justify-center mt-4 items-center">
