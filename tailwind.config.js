@@ -37,6 +37,7 @@ module.exports = {
         hoverCardTextBlue: "#0081FF",
         linkTitleSection: "#2F4C6B",
         linkTextColor: "#D3DFE5",
+        footerGrayLine: "#F2F4F8",
       },
     },
   },
