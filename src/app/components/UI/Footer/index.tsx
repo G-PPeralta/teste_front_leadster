@@ -1,6 +1,8 @@
 import { Facebook, Instagram, Linkedin } from "lucide-react";
 import Image from "next/image";
 import logo from "../../../../../public/logo.png";
+import { Links } from "./Links";
+import { cases, mainLinks, materials } from "./Mocks";
 
 export function Footer() {
   return (
@@ -13,61 +15,9 @@ export function Footer() {
       </div>
 
       <div className="grid grid-cols-1 grid-flow-row px-10 md:px-0 md:flex md:flex-row md:flex-wrap md:items-start md:justify-evenly py-2 md:py-8 w-full max-w-7xl mx-auto border-b-2 border-footerGrayLine">
-        <div className="flex flex-col md:w-1/4">
-          <h2 className="font-semibold text-linkTitleSection p-4 md:pb-8">
-            Links Principais
-          </h2>
-          <nav className="flex flex-col gap-2">
-            <a className="text-zinc-500 hover:text-zinc-400 font-semibold" href="#">
-              Home
-            </a>
-            <a className="text-zinc-500 hover:text-zinc-400 font-semibold" href="#">
-              Ferramenta
-            </a>
-            <a className="text-zinc-500 hover:text-zinc-400 font-semibold" href="#">
-              Preços
-            </a>
-            <a className="text-zinc-500 hover:text-zinc-400 font-semibold" href="#">
-              Contato
-            </a>
-          </nav>
-        </div>
-        <div className="flex flex-col md:w-1/4">
-          <h2 className="font-semibold text-linkTitleSection p-4 md:pb-8">Cases</h2>
-          <nav className="flex flex-col gap-2">
-            <a className="text-zinc-500 hover:text-zinc-400 font-semibold" href="#">
-              Geração de Leads B2B
-            </a>
-            <a className="text-zinc-500 hover:text-zinc-400 font-semibold" href="#">
-              Geração de Leads em Software
-            </a>
-            <a className="text-zinc-500 hover:text-zinc-400 font-semibold" href="#">
-              Geração de Leads em Imobiliária
-            </a>
-            <a className="text-zinc-500 hover:text-zinc-400 font-semibold sm:mb-4" href="#">
-              Cases de Sucesso
-            </a>
-          </nav>
-        </div>
-        <div className="flex flex-col md:w-1/4">
-          <h2 className="font-semibold text-linkTitleSection p-4 md:pb-8">
-            Materiais
-          </h2>
-          <nav className="flex flex-col gap-2">
-            <a className="text-zinc-500 hover:text-zinc-400 font-semibold" href="#">
-              Blog
-            </a>
-            <a className="text-zinc-500 hover:text-zinc-400 font-semibold" href="#">
-              Parceria com Agências
-            </a>
-            <a className="text-zinc-500 hover:text-zinc-400 font-semibold" href="#">
-              Guia Definitivo do Marketing
-            </a>
-            <a className="text-zinc-500 hover:text-zinc-400 font-semibold" href="#">
-              Materiais Gratuitos
-            </a>
-          </nav>
-        </div>
+        <Links title="Links Principais" info={mainLinks} />
+        <Links title="Cases" info={cases} />
+        <Links title="Materiais" info={materials} />
         <div className="flex flex-col md:w-1/4">
           <h2 className="font-semibold text-linkTitleSection p-4 md:pb-8">
             Siga a Leadster
