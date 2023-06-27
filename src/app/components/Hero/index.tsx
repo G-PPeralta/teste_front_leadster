@@ -7,7 +7,7 @@ import { CardModal } from "../CardModal";
 import { CardContainer } from "../UI/Card/CardContainer";
 
 export function Hero() {
-  const [filterType, setFilterType] = useState("Chatbot");
+  const [filterType, setFilterType] = useState("Geração de Leads");
   const [currentPage, setCurrentPage] = useState(1);
 
   const filteredCards = cardContent.filter((card) => {
