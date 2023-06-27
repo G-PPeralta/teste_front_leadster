@@ -1,3 +1,4 @@
+import { Features } from "./components/Features";
 import { Hero } from "./components/Hero";
 import { Intro } from "./components/Intro";
 import { Header } from "./components/UI/Header";
@@ -8,6 +9,7 @@ export default function Home() {
       <Header />
       <Intro />
       <Hero />
+      <Features />
     </main>
   );
 }
