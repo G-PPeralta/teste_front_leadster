@@ -25,17 +25,17 @@ export function Footer() {
           <div className="flex flex-col gap-2">
             <nav className="flex flex-row items-center gap-2 mb-3">
               <div className="rounded-full bg-zinc-200 w-8 h-8 flex items-center justify-center">
-                <a className="text-zinc-500 font-semibold" href="#">
+                <a className="text-zinc-500 font-semibold" href="#" aria-label="Link para a página do Linkedin">
                   <Linkedin size={20} />
                 </a>
               </div>
               <div className="rounded-full bg-zinc-200 w-8 h-8 flex items-center justify-center">
-                <a className="text-zinc-500 font-semibold" href="#">
+                <a className="text-zinc-500 font-semibold" href="#" aria-label="Link para a página do Facebook">
                   <Facebook size={20} strokeWidth={1} />
                 </a>
               </div>
               <div className="rounded-full bg-zinc-200 w-8 h-8 flex items-center justify-center">
-                <a className="text-zinc-500 font-semibold" href="#">
+                <a className="text-zinc-500 font-semibold" href="#" aria-label="Link para a página do Instagram">
                   <Instagram size={20} />
                 </a>
               </div>
