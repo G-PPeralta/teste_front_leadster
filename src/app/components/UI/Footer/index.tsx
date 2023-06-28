@@ -55,7 +55,7 @@ export function Footer() {
           <span className="text-center text-sm font-medium text-zinc-500">
             Copyright © 2015 - 2022 Todos os direitos reservados |{" "}
             <a
-              className="text-terciaryBlue transition-all hover:text-secondaryBlue"
+              className="text-buttonBlue transition-all hover:text-secondaryBlue"
               href="https://leadster.com.br"
               target="_blank"
               rel="noreferrer"

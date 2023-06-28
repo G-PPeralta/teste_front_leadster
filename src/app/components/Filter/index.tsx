@@ -22,7 +22,7 @@ export function Filter({ onHandleFilter, filterType }: FilterProps) {
             className={clsx(
               "flex flex-row items-center justify-center text-filterText font-semibold border-2 border-filterBorder rounded-full p-2 w-40 hover:text-filterTextHover hover:border-filterBorderHover hover:border-2",
               {
-                "bg-filterHoverBackground border-filterHoverBackground border-2 text-white hover:text-white":
+                "bg-buttonBlue border-buttonBlue border-2 text-white hover:text-white":
                   filterType === filterValue,
               }
             )}
