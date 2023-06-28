@@ -7,6 +7,10 @@ Link da vaga: https://www.linkedin.com/jobs/view/3642375120/?refId=9420e230-8117
 
 Deploy do projeto: https://teste-front-leadster-gamma.vercel.app/
 
+## Performance e Critério de Acessibilidade Conforme o Google LightHouse
+
+![Alt text](image-1.png)
+
 ## Tecnologias Utilizadas:
 
 Neste projeto foram utilizadas as seguintes tecnologias:
