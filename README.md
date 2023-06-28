@@ -5,7 +5,7 @@ Este projeto é destinado ao desafio técnico para a vaga de Desenvolvedor Front
 
 Link da vaga: https://www.linkedin.com/jobs/view/3642375120/?refId=9420e230-8117-4757-a099-a12312ff515d&trackingId=EB6TJQqKT4awevwq3I47xw%3D%3D
 
-
+Deploy do projeto: https://teste-front-leadster-gamma.vercel.app/
 
 ## Tecnologias Utilizadas:
 
