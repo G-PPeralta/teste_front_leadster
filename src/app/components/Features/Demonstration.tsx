@@ -15,7 +15,7 @@ export function Demonstration() {
         </h2>
       </div>
       <div className="flex flex-col items-center md:flex-row gap-4 w-full">
-        <button className="group h-14 w-fit rounded-full bg-terciaryBlue px-4 text-black transition-colors hover:bg-secondaryBlue lg:h-[70px]">
+        <button className="group h-14 w-fit rounded-full bg-buttonBlue px-4 text-black transition-colors hover:bg-secondaryBlue lg:h-[70px]">
           <span className="flex w-fit items-center justify-center px-5 py-2 text-center text-sm font-bold leading-5 text-white transition-colors lg:text-base">
             VER DEMONSTRAÇÃO
           </span>

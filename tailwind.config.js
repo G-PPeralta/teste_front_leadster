@@ -17,6 +17,7 @@ module.exports = {
         secondaryBlue: '#005AAD',
         terciaryBlue: '#068DF3',
         titleBlue: '#2E9AFF',
+        buttonBlue: "#096CFF",
         primaryGrey: '#D9D9D980',
         lineGrey: '#C8D4DD',
         spreadsheetIconGreen: "#11BA93",
